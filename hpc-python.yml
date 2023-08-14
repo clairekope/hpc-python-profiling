@@ -1,0 +1,27 @@
+name: hpc-python
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - fasteners
+  - jupyter
+  - jupyterlab
+  - numpy
+  - pandas
+  - matplotlib
+  - line_profiler
+  - numba
+  - modin
+  - cupy
+  - cuda-version=12.1
+  - python-graphviz
+  - pytorch
+  - pytorch-cuda=12.1
+  - pip
+  - s3fs
+  - scikit-learn
+  - scipy
+  - zarr
+  - pip:
+    - mpi4py
