@@ -41,6 +41,5 @@ To use this environment, run `conda activate hp-python` on the command line or s
 
 These brief readings will familiarize you with concepts needed for in-class activities on Day 1.
 
-- [IPython/Jupyter Magic Commands]
 - [Profiling and Timing Magic Commands](https://jakevdp.github.io/PythonDataScienceHandbook/01.07-timing-and-profiling.html)
 - [Python Operator Precedence](https://introcs.cs.princeton.edu/python/appendix_precedence/)
