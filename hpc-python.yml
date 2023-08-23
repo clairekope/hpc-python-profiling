@@ -1,4 +1,4 @@
-name: hp-python
+name: hpc-python
 channels:
   - conda-forge
   - nvidia

@@ -13,7 +13,7 @@ You can also use the terminal in OnDemand to setup your [Python environment](#se
 
 OnDemand offers both the traditional Jupyter Notebook through the [Jupyter Notebook Interactive App](https://ondemand.hpcc.msu.edu/pun/sys/dashboard/batch_connect/sys/bc_icer_jupyter/session_contexts/new) as well as the newer [JupyterLab](https://jupyter.org/try-jupyter/lab/?path=notebooks%2FIntro.ipynb) interface through the [Jupyter (beta) Interactive App](https://ondemand.hpcc.msu.edu/pun/sys/dashboard/batch_connect/sys/bc_icer_jupyter_beta/session_contexts/new). I personally recommend JupyterLab because it offers a Table of Contents for easier navigation inside Notebooks!
 
-<u>Optionally, if you prefer to run Jupyter Notebooks through VSCode, you can follow this guide from ICER.</u>
+Optionally, if you prefer to run Jupyter Notebooks through VSCode, you can follow [this guide](https://docs.icer.msu.edu/Jupyter_Notebook_in_VS_Code) from ICER.
 
 ## Cloning GitHub Classroom Repositories
 
@@ -36,6 +36,14 @@ conda env create -f hp-python.yml
 It will probably take a while!
 
 To use this environment, run `conda activate hp-python` on the command line or specify the environment name `hp-python` when requesting an OnDemand job. You may need to check the "Launch Jupyter Notebook using the Anaconda installation in my home directory" box in OnDemand.
+
+## Course Teams Channel
+
+Please access the Microsoft Teams [channel for this course](https://teams.microsoft.com/l/channel/19%3a3dd0be706c0e44b78efe9725782fce35%40thread.tacv2/High%2520Performance%2520Python?groupId=363209fc-9ec9-4541-af7d-820a23e72d62&tenantId=22177130-642f-41d9-9211-74237ad5687d). This channel is available for class-related discussion and will be used for general announcements.
+
+## Pre-Class Survey
+
+This class is open to students with a wide range of backgrounds and research goals. Please fill out this [pre-class survey](https://docs.google.com/forms/d/e/1FAIpQLSeuwv3JQioi-WoDjQ8_e2NbWzSa7Y6Eo6GrYjSA60AWjd8Mqw/viewform?usp=sf_link) so I can better adapt the material to your needs.
 
 ## Reading for Day 1
 
