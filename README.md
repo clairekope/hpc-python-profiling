@@ -18,24 +18,24 @@ Optionally, if you prefer to run Jupyter Notebooks through VSCode, you can follo
 ## Cloning GitHub Classroom Repositories
 
 If you're reading this README, you've already successfully accepted this assignment from GitHub Classroom.
-Now, clone this repository **to the HPCC.** You'll need `hp-python.yml` to set up your course Python environment in the [next step](#setting-up-python-environment).
+Now, clone this repository **to the HPCC.** You'll need `hpc-python.yml` to set up your course Python environment in the [next step](#setting-up-python-environment).
 The Notebook `workbook_profiling.ipynb` will be used **on the first day of class,** September 1, 2023.
 
 ## Setting Up Python Environment
 
 I recommend using the [Conda package manager](https://docs.conda.io/en/latest/) to manage your Python environment for this course. Conda is installed alongside the [Anaconda](https://www.anaconda.com/), [Miniconda](https://docs.conda.io/en/latest/miniconda.html), and [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) Python distributions.
 
-As part of this repository, I have included `hp-python.yml`, a file compatible with Conda, that will install the necessary packages into a *separate environment*. This way, if you already use Conda to manage Python for your research on the HPCC, this course will not interfere.
+As part of this repository, I have included `hpc-python.yml`, a file compatible with Conda, that will install the necessary packages into a *separate environment*. This way, if you already use Conda to manage Python for your research on the HPCC, this course will not interfere.
 
 Installing a Conda-based distribution (such as Anaconda) on the HPCC is slightly different than installing it on your personal computer. **Please install Conda following [ICER's guide](docs.icer.msu.edu/Using_conda/).**
 
 With the `Conda/3` module loaded following the ICER Conda guide, run 
 ```
-conda env create -f hp-python.yml
+conda env create -f hpc-python.yml
 ```
 It will probably take a while!
 
-To use this environment, run `conda activate hp-python` on the command line or specify the environment name `hp-python` when requesting an OnDemand job. You may need to check the "Launch Jupyter Notebook using the Anaconda installation in my home directory" box in OnDemand.
+To use this environment, run `conda activate hpc-python` on the command line or specify the environment name `hpc-python` when requesting an OnDemand job. You may need to check the "Launch Jupyter Notebook using the Anaconda installation in my home directory" box in OnDemand.
 
 ## Course Teams Channel
 
