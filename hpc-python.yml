@@ -1,6 +1,7 @@
 name: hpc-python
 channels:
   - conda-forge
+  - pytorch
   - nvidia
 dependencies:
   - jupyter
