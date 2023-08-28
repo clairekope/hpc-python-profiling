@@ -23,19 +23,25 @@ The Notebook `workbook_profiling.ipynb` will be used **on the first day of class
 
 ## Setting Up Python Environment
 
-I recommend using the [Conda package manager](https://docs.conda.io/en/latest/) to manage your Python environment for this course. Conda is installed alongside the [Anaconda](https://www.anaconda.com/), [Miniconda](https://docs.conda.io/en/latest/miniconda.html), and [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) Python distributions.
+I recommend using the [Conda package manager](https://docs.conda.io/en/latest/) to manage your Python environment for this course. Conda is installed alongside the [Anaconda](https://www.anaconda.com/) and[Miniconda](https://docs.conda.io/en/latest/miniconda.html) Python distributions. You may wish to experiment with [Mamba](https://mamba.readthedocs.io/en/latest/), a faster alternative to Conda.
 
 As part of this repository, I have included `hpc-python.yml`, a file compatible with Conda, that will install the necessary packages into a *separate environment*. This way, if you already use Conda to manage Python for your research on the HPCC, this course will not interfere.
 
 Installing a Conda-based distribution (such as Anaconda) on the HPCC is slightly different than installing it on your personal computer. **Please install Conda following [ICER's guide](docs.icer.msu.edu/Using_conda/).**
 
-With the `Conda/3` module loaded following the ICER Conda guide, run 
+Once Conda is installed, run the following to set up the course Python environment:
 ```
+ssh dev-amd20-v100
+module load Conda/3 CUDA/11.8.0
 conda env create -f hpc-python.yml
 ```
-It will probably take a while!
+If you opted to try Mamba, replace `conda` with `mamba` on the last line. 
 
-To use this environment, run `conda activate hpc-python` on the command line or specify the environment name `hpc-python` when requesting an OnDemand job. You may need to check the "Launch Jupyter Notebook using the Anaconda installation in my home directory" box in OnDemand.
+The installation will probably take a while! Due to yet unsolved issues with the HPCC, you may have better luck installing the environment *in the morning*. The HPCC has tended to experience filesystem slowdown in the afternoon.
+
+Creating this environment *must* be done on the V100 development node, as this is the GPU will we use in the last part of class. If you install the environment on a node without a GPU, the GPU-related packages will not install correctly.
+
+To use this environment, run `conda activate hpc-python` on the command line or specify the environment name `hpc-python` when requesting an OnDemand job. In OnDemand, you may need to check the "Launch Jupyter Notebook using the Anaconda installation in my home directory" box in OnDemand.
 
 ## Course Teams Channel
 
