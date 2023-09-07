@@ -21,6 +21,8 @@ If you're reading this README, you've already successfully accepted this assignm
 Now, clone this repository **to the HPCC.** You'll need `hpc-python.yml` to set up your course Python environment in the [next step](#setting-up-python-environment).
 The Notebook `workbook_profiling.ipynb` will be used **on the first day of class,** September 1, 2023.
 
+**FUTURE NOTE:** GitHub no longer allows cloning via https on the HPCC. Students will need instructions for setting up an SSH key on the HPCC and copying it to GitHub.
+
 ## Setting Up Python Environment
 
 I recommend using the [Conda package manager](https://docs.conda.io/en/latest/) to manage your Python environment for this course. Conda is installed alongside the [Anaconda](https://www.anaconda.com/) and[Miniconda](https://docs.conda.io/en/latest/miniconda.html) Python distributions. You may wish to experiment with [Mamba](https://mamba.readthedocs.io/en/latest/), a faster alternative to Conda.
