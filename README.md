@@ -37,7 +37,7 @@ Once Conda is installed, run the following to set up the course Python environme
 ```
 ssh dev-amd20-v100
 module unload Python
-module load Conda/3 CUDA/11.7.0
+module load Conda/3 OpenMPI
 conda env create -f hpc-python.yml
 ```
 If you opted to try Mamba, replace `conda` with `mamba` on the last line. 
